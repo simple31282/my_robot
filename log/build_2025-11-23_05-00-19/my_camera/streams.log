@@ -1,0 +1,38 @@
+[5.385s] Invoking command in '/home/edwardak/my_robot_ws/build/my_camera': PYTHONPATH=/home/edwardak/my_robot_ws/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/edwardak/my_robot_ws/build/my_camera/build
+[6.780s] running develop
+[7.788s] Removing /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my-camera.egg-link (link to .)
+[7.919s] Invoked command in '/home/edwardak/my_robot_ws/build/my_camera' returned '0': PYTHONPATH=/home/edwardak/my_robot_ws/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/edwardak/my_robot_ws/build/my_camera/build
+[7.921s] Invoking command in '/home/edwardak/my_robot_ws/src/my_camera': PYTHONPATH=/home/edwardak/my_robot_ws/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_camera build --build-base /home/edwardak/my_robot_ws/build/my_camera/build install --record /home/edwardak/my_robot_ws/build/my_camera/install.log --single-version-externally-managed install_data --force
+[9.024s] running egg_info
+[9.090s] writing ../../build/my_camera/my_camera.egg-info/PKG-INFO
+[9.093s] writing dependency_links to ../../build/my_camera/my_camera.egg-info/dependency_links.txt
+[9.093s] writing entry points to ../../build/my_camera/my_camera.egg-info/entry_points.txt
+[9.094s] writing requirements to ../../build/my_camera/my_camera.egg-info/requires.txt
+[9.101s] writing top-level names to ../../build/my_camera/my_camera.egg-info/top_level.txt
+[9.248s] reading manifest file '../../build/my_camera/my_camera.egg-info/SOURCES.txt'
+[9.253s] adding license file 'LICENSE'
+[9.254s] writing manifest file '../../build/my_camera/my_camera.egg-info/SOURCES.txt'
+[9.255s] running build
+[9.255s] running build_py
+[9.262s] running install
+[9.288s] running install_lib
+[9.370s] creating /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera
+[9.373s] copying /home/edwardak/my_robot_ws/build/my_camera/build/lib/my_camera/ip_stream_node.py -> /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera
+[9.376s] copying /home/edwardak/my_robot_ws/build/my_camera/build/lib/my_camera/__init__.py -> /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera
+[9.378s] copying /home/edwardak/my_robot_ws/build/my_camera/build/lib/my_camera/usbcam_node.py -> /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera
+[9.381s] copying /home/edwardak/my_robot_ws/build/my_camera/build/lib/my_camera/webcam_node.py -> /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera
+[9.388s] byte-compiling /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera/ip_stream_node.py to ip_stream_node.cpython-312.pyc
+[9.388s] byte-compiling /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera/__init__.py to __init__.cpython-312.pyc
+[9.389s] byte-compiling /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera/usbcam_node.py to usbcam_node.cpython-312.pyc
+[9.389s] byte-compiling /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera/webcam_node.py to webcam_node.cpython-312.pyc
+[9.393s] running install_data
+[9.393s] copying resource/my_camera -> /home/edwardak/my_robot_ws/install/my_camera/share/ament_index/resource_index/packages
+[9.395s] copying package.xml -> /home/edwardak/my_robot_ws/install/my_camera/share/my_camera
+[9.397s] running install_egg_info
+[9.483s] Copying ../../build/my_camera/my_camera.egg-info to /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my_camera-0.0.0-py3.12.egg-info
+[9.491s] running install_scripts
+[10.118s] Installing ip_stream_node script to /home/edwardak/my_robot_ws/install/my_camera/lib/my_camera
+[10.118s] Installing usbcam_node script to /home/edwardak/my_robot_ws/install/my_camera/lib/my_camera
+[10.119s] Installing webcam_node script to /home/edwardak/my_robot_ws/install/my_camera/lib/my_camera
+[10.121s] writing list of installed files to '/home/edwardak/my_robot_ws/build/my_camera/install.log'
+[10.232s] Invoked command in '/home/edwardak/my_robot_ws/src/my_camera' returned '0': PYTHONPATH=/home/edwardak/my_robot_ws/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_camera build --build-base /home/edwardak/my_robot_ws/build/my_camera/build install --record /home/edwardak/my_robot_ws/build/my_camera/install.log --single-version-externally-managed install_data --force

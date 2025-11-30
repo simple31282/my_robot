@@ -1,0 +1,1 @@
+/home/edwardak/my_robot_ws/src/my_robot_description/urdf/install/setup.ps1

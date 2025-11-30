@@ -1,0 +1,68 @@
+[0.114s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake /home/edwardak/my_robot_ws/src/my_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/edwardak/my_robot_ws/install/my_robot_description
+[0.395s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.614s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.147s] -- Configuring done (1.9s)
+[2.213s] -- Generating done (0.0s)
+[2.235s] -- Build files have been written to: /home/edwardak/my_robot_ws/build/my_robot_description
+[2.256s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake /home/edwardak/my_robot_ws/src/my_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/edwardak/my_robot_ws/install/my_robot_description
+[2.261s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --build /home/edwardak/my_robot_ws/build/my_robot_description -- -j8 -l8
+[2.436s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --build /home/edwardak/my_robot_ws/build/my_robot_description -- -j8 -l8
+[2.475s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --install /home/edwardak/my_robot_ws/build/my_robot_description
+[2.508s] -- Install configuration: ""
+[2.511s] -- Execute custom install script
+[2.517s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[2.521s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[2.522s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[2.522s]   Use the cmake_policy command to set the policy and suppress this warning.
+[2.523s] Call Stack (most recent call first):
+[2.523s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[2.524s]   cmake_install.cmake:46 (include)
+[2.524s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.526s] [0m
+[2.526s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/build/.built_by
+[2.565s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/build/COLCON_IGNORE
+[2.603s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+[2.654s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/.colcon_install_layout
+[2.702s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/COLCON_IGNORE
+[2.734s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/_local_setup_util_ps1.py
+[2.770s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/_local_setup_util_sh.py
+[2.803s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.bash
+[2.840s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.ps1
+[2.882s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.sh
+[2.916s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.zsh
+[2.962s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.bash
+[3.003s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.ps1
+[3.050s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.sh
+[3.093s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.zsh
+[3.145s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/COLCON_IGNORE
+[3.175s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/build_2025-11-02_02-05-41/events.log
+[3.250s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/build_2025-11-02_02-05-41/logger_all.log
+[3.294s] -- Up-to-date symlink: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/latest/events.log
+[3.295s] -- Up-to-date symlink: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/latest/logger_all.log
+[3.295s] -- Up-to-date symlink: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/latest_build/events.log
+[3.295s] -- Up-to-date symlink: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/latest_build/logger_all.log
+[3.295s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
+[3.327s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base_gazebo.xacro
+[3.393s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
+[3.435s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/xacro
+[3.510s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//meshes/base.stl
+[3.578s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//rviz/urdf_config.rviz
+[3.662s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
+[3.706s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+[3.751s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/package.xml
+[3.797s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[3.837s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[3.886s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[3.966s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[4.012s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[4.071s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[4.130s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[4.196s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[4.240s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[4.289s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[4.362s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[4.412s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[4.490s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[4.580s] -- Symlinking: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[4.622s] -- Up-to-date symlink: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/package.xml
+[4.629s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --install /home/edwardak/my_robot_ws/build/my_robot_description

@@ -1,0 +1,21 @@
+[4.467s] Invoking command in '/home/edwardak/my_robot_ws/build/my_camera': PYTHONPATH=/home/edwardak/my_robot_ws/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/edwardak/my_robot_ws/build/my_camera/build --no-deps symlink_data --force
+[6.040s] running develop
+[7.042s] running egg_info
+[7.127s] writing my_camera.egg-info/PKG-INFO
+[7.127s] writing dependency_links to my_camera.egg-info/dependency_links.txt
+[7.128s] writing entry points to my_camera.egg-info/entry_points.txt
+[7.128s] writing requirements to my_camera.egg-info/requires.txt
+[7.128s] writing top-level names to my_camera.egg-info/top_level.txt
+[7.314s] reading manifest file 'my_camera.egg-info/SOURCES.txt'
+[7.317s] writing manifest file 'my_camera.egg-info/SOURCES.txt'
+[7.421s] running build_ext
+[7.422s] Creating /home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages/my-camera.egg-link (link to .)
+[7.425s] Installing ip_stream_node script to /home/edwardak/my_robot_ws/install/my_camera/lib/my_camera
+[7.426s] Installing usbcam_node script to /home/edwardak/my_robot_ws/install/my_camera/lib/my_camera
+[7.431s] Installing webcam_node script to /home/edwardak/my_robot_ws/install/my_camera/lib/my_camera
+[7.431s] 
+[7.431s] Installed /home/edwardak/my_robot_ws/build/my_camera
+[7.431s] running symlink_data
+[7.432s] symbolically linking /home/edwardak/my_robot_ws/build/my_camera/resource/my_camera -> /home/edwardak/my_robot_ws/install/my_camera/share/ament_index/resource_index/packages
+[7.435s] symbolically linking /home/edwardak/my_robot_ws/build/my_camera/package.xml -> /home/edwardak/my_robot_ws/install/my_camera/share/my_camera
+[7.615s] Invoked command in '/home/edwardak/my_robot_ws/build/my_camera' returned '0': PYTHONPATH=/home/edwardak/my_robot_ws/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edwardak/my_robot_ws/install/my_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/edwardak/my_robot_ws/build/my_camera/build --no-deps symlink_data --force

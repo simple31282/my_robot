@@ -1,0 +1,320 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="maze_with_benches_world">
+
+    <!-- Gravity, ambient, light -->
+    <gravity>0 0 -9.81</gravity>
+    <ambient>0.4 0.4 0.4 1</ambient>
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Maze parameters -->
+    <!-- Maze footprint: 6m x 4m -->
+    <!-- All walls are 0.15 m thick, 1.0 m tall -->
+
+    <!-- Perimeter walls -->
+    <model name="wall_north">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>6.0 0.15 1.0</size>
+            </box>
+          </geometry>
+          <pose>0 2.0 0.5 0 0 0</pose>
+          <material><ambient>0.6 0.6 0.6 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box><size>6.0 0.15 1.0</size></box>
+          </geometry>
+          <pose>0 2.0 0.5 0 0 0</pose>
+        </collision>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>6.0 0.15 1.0</size></box></geometry>
+          <pose>0 -2.0 0.5 0 0 0</pose>
+          <material><ambient>0.6 0.6 0.6 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>6.0 0.15 1.0</size></box></geometry>
+          <pose>0 -2.0 0.5 0 0 0</pose>
+        </collision>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.15 4.0 1.0</size></box></geometry>
+          <pose>3.0 0 0.5 0 0 0</pose>
+          <material><ambient>0.6 0.6 0.6 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.15 4.0 1.0</size></box></geometry>
+          <pose>3.0 0 0.5 0 0 0</pose>
+        </collision>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.15 4.0 1.0</size></box></geometry>
+          <pose>-3.0 0 0.5 0 0 0</pose>
+          <material><ambient>0.6 0.6 0.6 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.15 4.0 1.0</size></box></geometry>
+          <pose>-3.0 0 0.5 0 0 0</pose>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Internal maze walls (example layout) -->
+    <model name="wall_internal_1">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>3.0 0.15 1.0</size></box></geometry>
+          <pose>-1.5 0.9 0.5 0 0 0</pose>
+          <material><ambient>0.5 0.4 0.4 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>3.0 0.15 1.0</size></box></geometry>
+          <pose>-1.5 0.9 0.5 0 0 0</pose>
+        </collision>
+      </link>
+    </model>
+
+    <model name="wall_internal_2">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>3.0 0.15 1.0</size></box></geometry>
+          <pose>1.5 -0.9 0.5 0 0 0</pose>
+          <material><ambient>0.5 0.4 0.4 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>3.0 0.15 1.0</size></box></geometry>
+          <pose>1.5 -0.9 0.5 0 0 0</pose>
+        </collision>
+      </link>
+    </model>
+
+    <!-- BENCH CONFIG: bench top at ~0.45 m (bench thickness 0.1, leg hidden) -->
+    <!-- Bench dimensions: length x width x thickness -->
+    <!-- We'll create 4 benches positioned so each touches a wall -->
+
+    <!-- Bench 1: along west wall, near north-west corner -->
+    <model name="bench_west_north">
+      <static>true</static>
+      <pose>-2.85 1.3 0.05 0 0 0</pose> <!-- bench base at z=0.05, thickness 0.1 -> top z=0.1? We'll use seat height 0.45 via link pose below -->
+      <link name="bench_link">
+        <pose>-2.85 1.3 0.45 0 0 0</pose>
+        <visual name="bench_visual">
+          <geometry>
+            <box><size>1.2 0.35 0.10</size></box>
+          </geometry>
+          <material><ambient>0.7 0.5 0.3 1</ambient></material>
+        </visual>
+        <collision name="bench_collision">
+          <geometry>
+            <box><size>1.2 0.35 0.10</size></box>
+          </geometry>
+        </collision>
+      </link>
+
+      <!-- Objects on bench 1: bottle, cup, book -->
+      <link name="bench1_bottle">
+        <pose>-2.45 1.3 0.55 0 0 0</pose> <!-- centered near bench -->
+        <visual name="bottle_vis">
+          <geometry>
+            <cylinder><radius>0.03</radius><length>0.18</length></cylinder>
+          </geometry>
+          <material><ambient>0.0 0.3 0.7 1</ambient></material>
+        </visual>
+        <collision name="bottle_col">
+          <geometry><cylinder><radius>0.03</radius><length>0.18</length></cylinder></geometry>
+        </collision>
+      </link>
+
+      <link name="bench1_cup">
+        <pose>-2.95 1.25 0.50 0 0 0</pose>
+        <visual name="cup_vis">
+          <geometry><cylinder><radius>0.04</radius><length>0.06</length></cylinder></geometry>
+          <material><ambient>0.9 0.9 0.2 1</ambient></material>
+        </visual>
+        <collision name="cup_col">
+          <geometry><cylinder><radius>0.04</radius><length>0.06</length></cylinder></geometry>
+        </collision>
+      </link>
+
+      <link name="bench1_book">
+        <pose>-2.85 1.38 0.48 0 0 0</pose>
+        <visual name="book_vis">
+          <geometry><box><size>0.20 0.14 0.02</size></box></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+        <collision name="book_col">
+          <geometry><box><size>0.20 0.14 0.02</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Bench 2: along north wall, near center -->
+    <model name="bench_north_center">
+      <static>true</static>
+      <link name="bench2_link">
+        <pose>0.0 1.7 0.45 0 0 0</pose>
+        <visual name="bench2_visual">
+          <geometry><box><size>1.2 0.35 0.10</size></box></geometry>
+          <material><ambient>0.7 0.5 0.3 1</ambient></material>
+        </visual>
+        <collision name="bench2_collision">
+          <geometry><box><size>1.2 0.35 0.10</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- Objects on bench 2: potted_plant, vase, teddy_bear -->
+      <link name="bench2_plant">
+        <pose>-0.2 1.8 0.55 0 0 0</pose>
+        <visual name="plant_vis">
+          <geometry><cylinder><radius>0.06</radius><length>0.06</length></cylinder></geometry>
+          <material><ambient>0.1 0.6 0.1 1</ambient></material>
+        </visual>
+        <collision name="plant_col"><geometry><cylinder><radius>0.06</radius><length>0.06</length></cylinder></geometry></collision>
+      </link>
+
+      <link name="bench2_vase">
+        <pose>0.1 1.6 0.52 0 0 0</pose>
+        <visual name="vase_vis">
+          <geometry><cylinder><radius>0.05</radius><length>0.18</length></cylinder></geometry>
+          <material><ambient>0.8 0.3 0.3 1</ambient></material>
+        </visual>
+        <collision name="vase_col"><geometry><cylinder><radius>0.05</radius><length>0.18</length></cylinder></geometry></collision>
+      </link>
+
+      <link name="bench2_teddy">
+        <pose>0.35 1.7 0.53 0 0 0</pose>
+        <visual name="teddy_vis">
+          <geometry><sphere><radius>0.07</radius></sphere></geometry>
+          <material><ambient>0.8 0.6 0.4 1</ambient></material>
+        </visual>
+        <collision name="teddy_col"><geometry><sphere><radius>0.07</radius></geometry></collision>
+      </link>
+    </model>
+
+    <!-- Bench 3: east wall near south-east -->
+    <model name="bench_east_south">
+      <static>true</static>
+      <link name="bench3_link">
+        <pose>2.85 -1.3 0.45 0 0 0</pose>
+        <visual name="bench3_visual">
+          <geometry><box><size>1.2 0.35 0.10</size></box></geometry>
+          <material><ambient>0.7 0.5 0.3 1</ambient></material>
+        </visual>
+        <collision name="bench3_collision">
+          <geometry><box><size>1.2 0.35 0.10</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- Objects on bench 3: laptop, cell_phone, mug -->
+      <link name="bench3_laptop">
+        <pose>3.15 -1.3 0.55 0 0 0</pose>
+        <visual name="laptop_vis">
+          <geometry><box><size>0.28 0.18 0.02</size></box></geometry>
+          <material><ambient>0.1 0.1 0.1 1</ambient></material>
+        </visual>
+        <collision name="laptop_col"><geometry><box><size>0.28 0.18 0.02</size></box></geometry></collision>
+      </link>
+
+      <link name="bench3_phone">
+        <pose>2.95 -1.2 0.50 0 0 0</pose>
+        <visual name="phone_vis">
+          <geometry><box><size>0.07 0.14 0.01</size></box></geometry>
+          <material><ambient>0.0 0.0 0.0 1</ambient></material>
+        </visual>
+        <collision name="phone_col"><geometry><box><size>0.07 0.14 0.01</size></box></geometry></collision>
+      </link>
+
+      <link name="bench3_mug">
+        <pose>2.75 -1.35 0.50 0 0 0</pose>
+        <visual name="mug_vis">
+          <geometry><cylinder><radius>0.04</radius><length>0.07</length></cylinder></geometry>
+          <material><ambient>0.9 0.5 0.2 1</ambient></material>
+        </visual>
+        <collision name="mug_col"><geometry><cylinder><radius>0.04</radius><length>0.07</length></cylinder></geometry></collision>
+      </link>
+    </model>
+
+    <!-- Bench 4: south center touching south wall -->
+    <model name="bench_south_center">
+      <static>true</static>
+      <link name="bench4_link">
+        <pose>0.0 -1.7 0.45 0 0 0</pose>
+        <visual name="bench4_visual">
+          <geometry><box><size>1.2 0.35 0.10</size></box></geometry>
+          <material><ambient>0.7 0.5 0.3 1</ambient></material>
+        </visual>
+        <collision name="bench4_collision"><geometry><box><size>1.2 0.35 0.10</size></box></geometry></collision>
+      </link>
+
+      <!-- Objects on bench 4: bottle, bowl, plate, fruit (banana) -->
+      <link name="bench4_bottle">
+        <pose>-0.25 -1.7 0.55 0 0 0</pose>
+        <visual name="bottle4_vis">
+          <geometry><cylinder><radius>0.03</radius><length>0.18</length></cylinder></geometry>
+          <material><ambient>0.1 0.4 0.8 1</ambient></material>
+        </visual>
+        <collision name="bottle4_col"><geometry><cylinder><radius>0.03</radius><length>0.18</length></cylinder></geometry></collision>
+      </link>
+
+      <link name="bench4_bowl">
+        <pose>0.1 -1.62 0.50 0 0 0</pose>
+        <visual name="bowl4_vis"><geometry><cylinder><radius>0.09</radius><length>0.05</length></cylinder></geometry><material><ambient>0.9 0.7 0.3 1</ambient></material></visual>
+        <collision name="bowl4_col"><geometry><cylinder><radius>0.09</radius><length>0.05</length></cylinder></geometry></collision>
+      </link>
+
+      <link name="bench4_plate">
+        <pose>0.35 -1.78 0.48 0 0 0</pose>
+        <visual name="plate_vis"><geometry><cylinder><radius>0.08</radius><length>0.02</length></cylinder></geometry><material><ambient>0.8 0.8 0.8 1</ambient></material></visual>
+        <collision name="plate_col"><geometry><cylinder><radius>0.08</radius><length>0.02</length></cylinder></geometry></collision>
+      </link>
+
+      <link name="bench4_banana">
+        <pose>0.55 -1.7 0.50 0 0 0</pose>
+        <visual name="banana_vis"><geometry><box><size>0.18 0.04 0.03</size></box></geometry><material><ambient>0.9 0.9 0.2 1</ambient></material></visual>
+        <collision name="banana_col"><geometry><box><size>0.18 0.04 0.03</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <!-- Spawn point for robot (optional) -->
+    <model name="robot_spawn">
+      <static>true</static>
+      <link name="link">
+        <pose> -0.8 0.0 0.0 0 0 0</pose>
+      </link>
+    </model>
+
+  </world>
+</sdf>

@@ -1,0 +1,57 @@
+[0.181s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --build /home/edwardak/my_robot_ws/build/my_robot_description -- -j8 -l8
+[1.596s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --build /home/edwardak/my_robot_ws/build/my_robot_description -- -j8 -l8
+[1.662s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --install /home/edwardak/my_robot_ws/build/my_robot_description
+[1.712s] -- Install configuration: ""
+[1.717s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf
+[1.721s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/build
+[1.724s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/build/COLCON_IGNORE
+[1.728s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/build/.built_by
+[1.728s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
+[1.728s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+[1.730s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log
+[1.731s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/latest_build
+[1.732s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/COLCON_IGNORE
+[1.733s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/latest
+[1.735s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/build_2025-11-02_02-05-41
+[1.737s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/build_2025-11-02_02-05-41/logger_all.log
+[1.739s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/log/build_2025-11-02_02-05-41/events.log
+[1.739s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install
+[1.740s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.sh
+[1.742s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.ps1
+[1.747s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/COLCON_IGNORE
+[1.747s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.zsh
+[1.748s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/_local_setup_util_sh.py
+[1.749s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.sh
+[1.749s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/_local_setup_util_ps1.py
+[1.749s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/.colcon_install_layout
+[1.753s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.zsh
+[1.753s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/local_setup.bash
+[1.754s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.ps1
+[1.755s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/install/setup.bash
+[1.755s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
+[1.758s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/xacro
+[1.760s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base_gazebo.xacro
+[1.760s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//meshes
+[1.765s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//meshes/base.stl
+[1.766s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//rviz
+[1.766s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//rviz/urdf_config.rviz
+[1.766s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//launch
+[1.773s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+[1.774s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
+[1.775s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/package.xml
+[1.775s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[1.776s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[1.779s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[1.789s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[1.789s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[1.790s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[1.790s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[1.790s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[1.790s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[1.790s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[1.791s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[1.791s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[1.801s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[1.802s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[1.802s] -- Up-to-date: /home/edwardak/my_robot_ws/install/my_robot_description/share/my_robot_description/package.xml
+[1.812s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/edwardak/my_robot_ws/install/my_camera:/opt/ros/jazzy /usr/bin/cmake --install /home/edwardak/my_robot_ws/build/my_robot_description

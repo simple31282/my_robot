@@ -1,0 +1,45 @@
+[0.305s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/edwardak/my_robot_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/edwardak/my_robot_ws/install/my_robot_bringup
+[1.672s] -- The C compiler identification is GNU 13.3.0
+[5.130s] -- The CXX compiler identification is GNU 13.3.0
+[8.292s] -- Detecting C compiler ABI info
+[9.632s] -- Detecting C compiler ABI info - done
+[9.672s] -- Check for working C compiler: /usr/bin/cc - skipped
+[9.674s] -- Detecting C compile features
+[9.675s] -- Detecting C compile features - done
+[10.133s] -- Detecting CXX compiler ABI info
+[11.365s] -- Detecting CXX compiler ABI info - done
+[11.409s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[11.410s] -- Detecting CXX compile features
+[11.417s] -- Detecting CXX compile features - done
+[11.457s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[12.030s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[12.540s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[13.024s] -- Added test 'lint_cmake' to check CMake code style
+[13.036s] -- Added test 'xmllint' to check XML markup files
+[13.044s] -- Configuring done (12.7s)
+[13.076s] -- Generating done (0.0s)
+[13.085s] -- Build files have been written to: /home/edwardak/my_robot_ws/build/my_robot_bringup
+[13.100s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/edwardak/my_robot_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/edwardak/my_robot_ws/install/my_robot_bringup
+[13.105s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/edwardak/my_robot_ws/build/my_robot_bringup -- -j8 -l8
+[13.247s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/edwardak/my_robot_ws/build/my_robot_bringup -- -j8 -l8
+[13.251s] Invoking command in '/home/edwardak/my_robot_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/edwardak/my_robot_ws/build/my_robot_bringup
+[13.285s] -- Install configuration: ""
+[13.285s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup//launch
+[13.291s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup//launch/my_robot.launch.xml
+[13.292s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup//config
+[13.301s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup
+[13.302s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup
+[13.304s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh
+[13.304s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv
+[13.305s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh
+[13.305s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv
+[13.313s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash
+[13.313s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh
+[13.314s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh
+[13.315s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv
+[13.315s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv
+[13.317s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup
+[13.318s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake
+[13.319s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake
+[13.320s] -- Installing: /home/edwardak/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.xml
+[13.328s] Invoked command in '/home/edwardak/my_robot_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/edwardak/my_robot_ws/build/my_robot_bringup
